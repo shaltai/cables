@@ -1,1 +1,73 @@
-// Filter Section Styles
+// Filter section styles
+
+.lnd-filter {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 8rem;
+	padding-bottom: 14rem;
+	background-color: white;
+
+	&__heading {
+		@extend %heading_level_2;
+		@extend %heading_dark;
+		width: 100%;
+	}
+
+	&__header-row {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		margin-bottom: 6rem;
+	}
+
+	&__text {
+		@extend %text_intro;
+		@extend %text_dark;
+	}
+
+	&__reset {
+		@extend %button_secondary_outline;
+	}
+}
+
+// Cable type
+.lnd-cable-type {
+	display: flex;
+	flex-wrap: wrap;
+	width: 68%;
+	margin-bottom: 6rem;
+
+	&__heading {
+		@extend %heading_level_4;
+		@extend %heading_dark;
+		width: 100%;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 10.5rem;
+		margin-right: 2.5rem;
+		list-style-type: none;
+	}
+
+	&__input {
+		display: none;
+	}
+}
+
+// Cable preview
+.lnd-cable-preview {
+	width: 100%;
+}
+
+// Filter settings
+.lnd-filter-settings {
+	display: flex;
+	width: 100%;
+}
