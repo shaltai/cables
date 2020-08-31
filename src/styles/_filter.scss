@@ -43,6 +43,7 @@
 		@extend %heading_level_4;
 		@extend %heading_dark;
 		width: 100%;
+		margin-bottom: 4rem;
 	}
 
 	&__list {
@@ -89,15 +90,16 @@
 		position: absolute;
 		bottom: 0;
 		display: flex;
-		// width: 100%;
+		width: 40%;
 		justify-content: space-between;
 	}
 
 	&__color-item {
-		position: relative;
-		margin-left: 2rem;
-		margin-right: 2rem;
-		cursor: pointer;
+		// position: relative;
+		// margin-left: 2rem;
+		// margin-right: 2rem;
+		// cursor: pointer;
+		width: 2rem;
 	}
 
 	&__input {
@@ -107,18 +109,16 @@
 	// Radio button styles
 	&__radiomark {
 		position: absolute;
-		top: 0;
-		left: 0;
+		bottom: 0;
 		width: 2rem;
 		height: 2rem;
 		border-radius: 100%;
-		// box-shadow: 0 0 0 0.2rem $color-grey;
 	}
 
 	&__radiomark::after {
 		content: '';
 		position: absolute;
-		top: 0rem;
+		bottom: 0rem;
 		left: 0rem;
 		width: 2rem;
 		height: 2rem;
@@ -191,4 +191,52 @@
 .lnd-filter-settings {
 	display: flex;
 	width: 100%;
+	justify-content: space-between;
+
+	&__heading {
+		@extend %heading_level_4;
+		@extend %heading_dark;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	&__plug {
+		width: 20%;
+	}
+
+	&__cable {
+		width: 40%;
+	}
+
+	&__lenght {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 4rem;
+	}
+
+	&__from {
+		@extend .lnd-input_dark;
+		width: 8rem;
+	}
+
+	&__to {
+		@extend .lnd-input_dark;
+		width: 8rem;
+		margin-bottom: 1.5rem;
+	}
+
+	&__range {
+		width: 100%;
+	}
+
+	&__material {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__select {
+		@extend %lnd-select_dark;
+	}
 }

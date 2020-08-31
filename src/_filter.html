@@ -96,14 +96,6 @@
 			</svg>
 		</div>
 		<!-- Cord -->
-		<!-- <div class="lnd-cable-preview__cord">
-			<div class="lnd-cable-preview__cord-form"></div>
-			<ul class="lnd-cable-preview__cord-colors">
-				<li class="lnd-cable-preview__cord-item">
-					<input class="lnd-cable-preview__cord-red" type="radio" name="" id="">
-				</li>
-			</ul>
-		</div> -->
 		<div class="lnd-cable-preview__cord lnd-cord">
 			<div class="lnd-cord__form"></div>
 			<div class="lnd-cord__colors">
@@ -223,47 +215,48 @@
 				<option value="44" class="lnd-filter-settings__option">xlr-mini-f</option>
 			</select>
 		</div>
-		<!-- Cable lenght -->
-		<div class="lnd-filter-settings__lenght">
-			<label class="lnd-filter-settings__label">
+		<!-- Cable parametrs -->
+		<div class="lnd-filter-settings__cable">
+			<!-- Cable lenght -->
+			<div class="lnd-filter-settings__lenght">
 				<h3 class="lnd-filter-settings__heading">Длина кабеля</h3>
-				<input class="lnd-filter-settings__input-from" type="text" name="from" size="10" value="0">
-			</label>
-			<label class="lnd-filter-settings__label">
-				<input class="lnd-filter-settings__input-to" type="text" name="to" size="10" value="0">
-			</label>
-			<input class="amount__range" name="balance" type="range" min="1" max="100000" value="19850"
-				id="day-reportRange">
-		</div>
-		<!-- Cable material -->
-		<div class="lnd-filter-settings__material">
-			<h3 class="lnd-filter-settings__heading">Материал кабеля</h3>
-			<ul class="lnd-filter-settings__list">
-				<li class="lnd-filter-settings__item">
-					<label for="" class="lnd-filter-settings__label">Медь
-						<input class="lnd-checkbox lnd-filter-settings__checkbox" type="checkbox" name="" id="">
-						<span class="lnd-checkmark"></span>
-					</label>
-				</li>
-				<li class="lnd-filter-settings__item">
-					<label for="" class="lnd-filter-settings__label">Серебро
-						<input class="lnd-checkbox lnd-filter-settings__checkbox" type="checkbox" name="" id="">
-						<span class="lnd-checkmark"></span>
-					</label>
-				</li>
-				<li class="lnd-filter-settings__item">
-					<label for="" class="lnd-filter-settings__label">Золото
-						<input class="lnd-checkbox lnd-filter-settings__checkbox" type="checkbox" name="" id="">
-						<span class="lnd-checkmark"></span>
-					</label>
-				</li>
-				<li class="lnd-filter-settings__item">
-					<label for="" class="lnd-filter-settings__label">Платина
-						<input class="lnd-checkbox lnd-filter-settings__checkbox" type="checkbox" name="" id="">
-						<span class="lnd-checkmark"></span>
-					</label>
-				</li>
-			</ul>
+				<label class="lnd-filter-settings__label">
+					<input class="lnd-filter-settings__from lnd-input" type="text" name="from" size="10" value="0">
+				</label>
+				<label class="lnd-filter-settings__label">
+					<input class="lnd-filter-settings__to lnd-input" type="text" name="to" size="10" value="0">
+				</label>
+				<input class="lnd-filter-settings__range" name="balance" type="range" min="1" max="100000" value="19850"
+					id="day-reportRange">
+			</div>
+			<!-- Cable material -->
+			<div class="lnd-filter-settings__material">
+				<h3 class="lnd-filter-settings__heading">Материал кабеля</h3>
+				<label class="lnd-check__label lnd-filter-settings__label">
+					<input class="lnd-check__input lnd-filter-settings__checkbox" type="checkbox" name="material"
+						id="material-0">
+					<span class="lnd-check__mark"></span>
+					Медь
+				</label>
+				<label class="lnd-check__label lnd-filter-settings__label">
+					<input class="lnd-check__input lnd-filter-settings__checkbox" type="checkbox" name="material"
+						id="material-1">
+					<span class="lnd-check__mark"></span>
+					Серебро
+				</label>
+				<label class="lnd-check__label lnd-filter-settings__label">
+					<input class="lnd-check__input lnd-filter-settings__checkbox" type="checkbox" name="material"
+						id="material-2">
+					<span class="lnd-check__mark"></span>
+					Золото
+				</label>
+				<label class="lnd-check__label lnd-filter-settings__label">
+					<input class="lnd-check__input lnd-filter-settings__checkbox" type="checkbox" name="material"
+						id="material-3">
+					<span class="lnd-check__mark"></span>
+					Платина
+				</label>
+			</div>
 		</div>
 		<!-- Plug 2 -->
 		<div class="lnd-filter-settings__plug">
