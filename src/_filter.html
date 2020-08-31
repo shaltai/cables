@@ -81,14 +81,93 @@
 	</div>
 	<!-- Cable preview -->
 	<div class="lnd-cable-preview">
-		<div class="lnd-cable-preview__image-1"></div>
-		<div class="lnd-cable-preview__cord"></div>
-		<ul class="lnd-cable-preview__cord-colors">
-			<li class="lnd-cable-preview__cord-item">
-				<button class="lnd-cable-preview__cord-red"></button>
-			</li>
-		</ul>
-		<div class="lnd-cable-preview__image-2"></div>
+		<!-- First plug -->
+		<div class="lnd-cable-preview__image-1">
+			<svg class="lnd-cable-preview__plug-1" width="190px" height="110px" viewBox="0 0 190 110" version="1.1"
+				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					<g id="Cables_1440-Home-1" transform="translate(-161.000000, -985.000000)" fill="#F3F4F4"
+						fill-rule="nonzero">
+						<path
+							d="M341,985 C346.522847,985 351,989.477153 351,995 L351,995 L351,1085 C351,1090.52285 346.522847,1095 341,1095 L341,1095 L211,1095 C205.477153,1095 201,1090.52285 201,1085 L201,1085 L201,995 C201,989.477153 205.477153,985 211,985 L211,985 Z M172,1000 C176.970563,1000 181,1004.02944 181,1009 L181,1071 C181,1075.97056 176.970563,1080 172,1080 L170,1080 C165.029437,1080 161,1075.97056 161,1071 L161,1009 C161,1004.02944 165.029437,1000 170,1000 L172,1000 Z M326,1005 L226,1005 C223.238576,1005 221,1007.23858 221,1010 L221,1010 L221,1070 C221,1072.76142 223.238576,1075 226,1075 L226,1075 L326,1075 C328.761424,1075 331,1072.76142 331,1070 L331,1070 L331,1010 C331,1007.23858 328.761424,1005 326,1005 L326,1005 Z"
+							id="Combined-Shape"></path>
+					</g>
+				</g>
+			</svg>
+		</div>
+		<!-- Cord -->
+		<!-- <div class="lnd-cable-preview__cord">
+			<div class="lnd-cable-preview__cord-form"></div>
+			<ul class="lnd-cable-preview__cord-colors">
+				<li class="lnd-cable-preview__cord-item">
+					<input class="lnd-cable-preview__cord-red" type="radio" name="" id="">
+				</li>
+			</ul>
+		</div> -->
+		<div class="lnd-cable-preview__cord lnd-cord">
+			<div class="lnd-cord__form"></div>
+			<div class="lnd-cord__colors">
+				<label class="lnd-cord__color-item">
+					<input class="lnd-cord__input" type="radio" name="color" id="color-0">
+					<span class="lnd-cord__radiomark lnd-cord__black"></span>
+				</label>
+				<label class="lnd-cord__color-item">
+					<input class="lnd-cord__input" type="radio" name="color" id="color-1">
+					<span class="lnd-cord__radiomark lnd-cord__grey"></span>
+				</label>
+				<label class="lnd-cord__color-item">
+					<input class="lnd-cord__input" type="radio" name="color" id="color-2">
+					<span class="lnd-cord__radiomark lnd-cord__white"></span>
+				</label>
+				<label class="lnd-cord__color-item">
+					<input class="lnd-cord__input" type="radio" name="color" id="color-3">
+					<span class="lnd-cord__radiomark lnd-cord__red"></span>
+				</label>
+				<label class="lnd-cord__color-item">
+					<input class="lnd-cord__input" type="radio" name="color" id="color-4">
+					<span class="lnd-cord__radiomark lnd-cord__orange"></span>
+				</label>
+				<label class="lnd-cord__color-item">
+					<input class="lnd-cord__input" type="radio" name="color" id="color-5">
+					<span class="lnd-cord__radiomark lnd-cord__yellow"></span>
+				</label>
+				<label class="lnd-cord__color-item">
+					<input class="lnd-cord__input" type="radio" name="color" id="color-6">
+					<span class="lnd-cord__radiomark lnd-cord__green"></span>
+				</label>
+				<label class="lnd-cord__color-item">
+					<input class="lnd-cord__input" type="radio" name="color" id="color-7">
+					<span class="lnd-cord__radiomark lnd-cord__blue"></span>
+				</label>
+				<label class="lnd-cord__color-item">
+					<input class="lnd-cord__input" type="radio" name="color" id="color-8">
+					<span class="lnd-cord__radiomark lnd-cord__navy"></span>
+				</label>
+				<label class="lnd-cord__color-item">
+					<input class="lnd-cord__input" type="radio" name="color" id="color-9">
+					<span class="lnd-cord__radiomark lnd-cord__purple"></span>
+				</label>
+				<label class="lnd-cord__color-item">
+					<input class="lnd-cord__input" type="radio" name="color" id="color-10">
+					<span class="lnd-cord__radiomark lnd-cord__pink"></span>
+				</label>
+			</div>
+		</div>
+		<!-- Second plug -->
+		<div class="lnd-cable-preview__image-2">
+			<?xml version="1.0" encoding="UTF-8"?>
+			<svg class="lnd-cable-preview__plug-2" width="190px" height="110px" viewBox="0 0 190 110" version="1.1"
+				xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					<g id="Cables_1440-Home-1" transform="translate(-1089.000000, -985.000000)" fill="#F3F4F4"
+						fill-rule="nonzero">
+						<path
+							d="M1229,985 C1234.42924,985 1238.84793,989.326671 1238.99616,994.720095 L1239,995 L1239,1085 C1239,1090.42924 1234.67333,1094.84793 1229.2799,1094.99616 L1229,1095 L1099,1095 C1093.57076,1095 1089.15207,1090.67333 1089.00384,1085.2799 L1089,1085 L1089,995 C1089,989.57076 1093.32667,985.152068 1098.7201,985.003842 L1099,985 L1229,985 Z M1270,1000 C1274.97056,1000 1279,1004.02944 1279,1009 L1279,1071 C1279,1075.97056 1274.97056,1080 1270,1080 L1268,1080 C1263.02944,1080 1259,1075.97056 1259,1071 L1259,1009 C1259,1004.02944 1263.02944,1000 1268,1000 L1270,1000 Z M1214,1005 L1114,1005 C1111.31125,1005 1109.11818,1007.12231 1109.00462,1009.78311 L1109,1010 L1109,1070 C1109,1072.68875 1111.12231,1074.88182 1113.78311,1074.99538 L1114,1075 L1214,1075 C1216.68875,1075 1218.88182,1072.87769 1218.99538,1070.21689 L1219,1070 L1219,1010 C1219,1007.31125 1216.87769,1005.11818 1214.21689,1005.00462 L1214,1005 Z"
+							id="icon-plug_right"></path>
+					</g>
+				</g>
+			</svg>
+		</div>
 	</div>
 
 	<!-- Filter settings -->

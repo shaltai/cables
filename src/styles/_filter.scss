@@ -63,7 +63,128 @@
 
 // Cable preview
 .lnd-cable-preview {
+	position: relative;
+	display: flex;
 	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 6rem;
+
+	&__cord {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+.lnd-cord {
+	&__form {
+		width: 100%;
+		height: 2rem;
+		background-color: $color-grey-lightest;
+	}
+	// Cord colors buttons
+	&__colors {
+		position: absolute;
+		bottom: 0;
+		display: flex;
+		// width: 100%;
+		justify-content: space-between;
+	}
+
+	&__color-item {
+		position: relative;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		cursor: pointer;
+	}
+
+	&__input {
+		appearance: none;
+	}
+
+	// Radio button styles
+	&__radiomark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 100%;
+		// box-shadow: 0 0 0 0.2rem $color-grey;
+	}
+
+	&__radiomark::after {
+		content: '';
+		position: absolute;
+		top: 0rem;
+		left: 0rem;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 100%;
+		box-shadow: 0 0 0 0.2rem transparent;
+	}
+
+	&__input:hover ~ &__radiomark::after {
+		box-shadow: 0 0 0 0.2rem $color-grey-light;
+		transition: box-shadow 0.5s ease-out;
+	}
+
+	&__input:focus ~ &__radiomark::after {
+		box-shadow: 0 0 0 0.2rem $color-grey-light;
+	}
+
+	&__input:checked ~ &__radiomark::after {
+		box-shadow: 0 0 0 0.2rem $color-primary;
+		transition: box-shadow 0.5s ease-out;
+	}
+
+	// Colors
+	&__black {
+		background-color: $color-grey-darkest;
+		box-shadow: 0 0.2rem 0.4rem rgba($color: #161616, $alpha: 0.5);
+	}
+	&__grey {
+		background-color: $color-grey;
+		box-shadow: 0 0.2rem 0.4rem rgba($color: #a7a8a8, $alpha: 0.5);
+	}
+	&__white {
+		background-color: white;
+		box-shadow: 0 0.1rem 0.5rem rgba($color: #d8d9d9, $alpha: 0.5);
+	}
+	&__red {
+		background-color: #e64545;
+		box-shadow: 0 0.2rem 0.4rem rgba($color: #e64545, $alpha: 0.5);
+	}
+	&__orange {
+		background-color: #e6b045;
+		box-shadow: 0 0.2rem 0.4rem rgba($color: #e6b045, $alpha: 0.5);
+	}
+	&__yellow {
+		background-color: #e6e645;
+		box-shadow: 0 0.2rem 0.4rem rgba($color: #e6e645, $alpha: 0.5);
+	}
+	&__green {
+		background-color: #45e645;
+		box-shadow: 0 0.2rem 0.4rem rgba($color: #45e645, $alpha: 0.5);
+	}
+	&__blue {
+		background-color: #45e6e6;
+		box-shadow: 0 0.2rem 0.4rem rgba($color: #45e6e6, $alpha: 0.5);
+	}
+	&__navy {
+		background-color: #457ae6;
+		box-shadow: 0 0.2rem 0.4rem rgba($color: #457ae6, $alpha: 0.5);
+	}
+	&__purple {
+		background-color: #9545e6;
+		box-shadow: 0 0.2rem 0.4rem rgba($color: #9545e6, $alpha: 0.5);
+	}
+	&__pink {
+		background-color: #e645cb;
+		box-shadow: 0 0.2rem 0.4rem rgba($color: #e645cb, $alpha: 0.5);
+	}
 }
 
 // Filter settings
