@@ -1,0 +1,90 @@
+// FAQ section styles
+
+.lnd-faq {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 8rem;
+	padding-bottom: 14rem;
+	background-color: white;
+	justify-content: center;
+
+	&__heading {
+		@extend %heading_level_2;
+		@extend %heading_dark;
+		width: 74rem;
+		margin-bottom: 5rem;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		width: 74rem;
+	}
+
+	&__item {
+		width: 100%;
+		margin-bottom: 1rem;
+		border-radius: 0.5rem;
+		background-color: $color-grey-lightest;
+	}
+
+	&__answer {
+		padding-top: 0.5rem;
+		padding-left: 2rem;
+		padding-right: 4rem;
+		padding-bottom: 2rem;
+	}
+
+	// Button
+	&__disclosure {
+		position: relative;
+		@extend %heading_level_5;
+		@extend %heading_dark;
+		display: flex;
+		padding-top: 2rem;
+		padding-right: 4rem;
+		padding-bottom: 2rem;
+		padding-left: 2rem;
+		width: 100%;
+		border-radius: 0.5rem;
+		border: none;
+		cursor: pointer;
+		background-color: $color-grey-lightest;
+
+		&:hover {
+			color: $color-primary;
+			box-shadow: 0 1rem 1rem rgba($color: $color-grey-darkest, $alpha: 0.1);
+			transition: all 0.33s ease-out;
+		}
+
+		&::after {
+			position: absolute;
+			content: '+';
+			width: 1rem;
+			height: 1rem;
+			right: 2rem;
+		}
+
+		&.active::after {
+			position: absolute;
+			content: '–';
+			width: 1rem;
+			height: 1rem;
+			right: 2rem;
+		}
+	}
+
+	// Answer
+	&__answer {
+		display: none;
+
+		&.active {
+			display: flex;
+		}
+	}
+
+	&__text {
+		@extend %text_regular;
+		@extend %text_dark;
+	}
+}
