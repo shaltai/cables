@@ -21,7 +21,9 @@ $radius: 0.3rem;
 %heading {
 	line-height: 1.2;
 	font-weight: 700;
+	text-align: left;
 
+	// Heading size
 	&_level_1 {
 		@extend %heading;
 		font-size: 6rem;
@@ -122,6 +124,7 @@ $radius: 0.3rem;
 		}
 	}
 
+	// Heading color
 	&_light {
 		@extend %heading;
 		color: $color-grey-lightest;
@@ -136,6 +139,15 @@ $radius: 0.3rem;
 		@extend %heading;
 		color: transparent;
 		border: 1px solid $color-grey-darkest;
+	}
+
+	// Heading position
+	&_center {
+		text-align: center;
+	}
+
+	&_right {
+		text-align: right;
 	}
 }
 
@@ -260,6 +272,7 @@ $radius: 0.3rem;
 	background: transparent;
 	cursor: pointer;
 	text-align: center;
+	hyphens: none;
 
 	@media (max-width: 768px) {
 		padding: 1.65rem 3rem;

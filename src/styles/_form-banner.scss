@@ -6,46 +6,58 @@
 	padding-right: 6rem;
 	padding-bottom: 8rem;
 	padding-left: 6rem;
-	// background-image: url(../img/photo-cables-form.min.png);
-	// background-image: -webkit-image-set(url(../img/photo-cables-form.min.png) 1x, url(../img/photo-cables-form@2x.min.png) 2x);
 	background-repeat: no-repeat;
 	background-color: $color-grey-darkest;
-	// background-size: 100%;
 	background-position-x: right;
+
+	@media (max-width: 768px) {
+		padding-left: 3rem;
+	}
 
 	&::after {
 		position: absolute;
 		content: url(../img/photo-cables-form.min.png);
 		content: -webkit-image-set(url(../img/photo-cables-form.min.png) 1x, url(../img/photo-cables-form@2x.min.png) 2x);
-		// width: 49rem;
-		// height: 50rem;
 		right: 0;
 		top: -5rem;
+
+		@media (max-width: 768px) {
+			right: -13rem;
+			top: 12.5rem;
+		}
+		@media (max-width: 736px) {
+			right: -13rem;
+			top: 5.6rem;
+		}
+		@media (max-width: 414px) {
+			content: url(../img/photo-cables-form_mobile.min.png);
+			content: -webkit-image-set(
+				url(../img/photo-cables-form_mobile.min.png) 1x,
+				url(../img/photo-cables-form_mobile@2x.min.png) 2x
+			);
+			top: initial;
+			right: initial;
+			bottom: -0.7rem;
+			left: 0rem;
+		}
 	}
 
 	@media (max-width: 1024px) {
-		padding-left: 3rem;
+		// padding-left: 3rem;
 	}
 	@media (max-width: 414px) {
-		padding-right: 3rem;
+		padding-right: 2.5rem;
+		padding-left: 2.5rem;
 		padding-bottom: 30rem;
-		background-image: url(../img/photo-banner-form_mobile.min.png);
-		background-image: -webkit-image-set(
-			url(../img/photo-banner-form_mobile.min.png) 1x,
-			url(../img/photo-banner-form_mobile@2x.min.png) 2x
-		);
-	}
-
-	&__content {
 	}
 
 	&__info {
 		display: flex;
 		flex-wrap: wrap;
-		width: 65%;
+		width: 68%;
 
 		@media (max-width: 1024px) {
-			width: 55%;
+			width: 60%;
 		}
 		@media (max-width: 414px) {
 			width: 100%;
@@ -55,6 +67,7 @@
 	&__heading {
 		@extend %heading_level_2;
 		@extend %heading_light;
+		width: 100%;
 		margin-bottom: 2rem;
 	}
 
@@ -68,6 +81,13 @@
 	// Form
 	&__form {
 		width: 100%;
+
+		@media (max-width: 768px) {
+			width: 80%;
+		}
+		@media (max-width: 414px) {
+			width: 100%;
+		}
 	}
 
 	&__inputs {
@@ -83,6 +103,9 @@
 		width: 39rem;
 		margin-right: 3rem;
 
+		@media (max-width: 1024px) {
+			width: 30rem;
+		}
 		@media (max-width: 768px) {
 			width: 100%;
 			margin-right: 0;
@@ -93,6 +116,7 @@
 	&__phone {
 		@extend .lnd-input_light;
 		width: 100%;
+
 		&::placeholder {
 			color: $color-grey-light;
 		}
@@ -106,6 +130,9 @@
 		width: 26rem;
 		margin-bottom: 2rem;
 
+		@media (max-width: 1024px) {
+			width: 20rem;
+		}
 		@media (max-width: 768px) {
 			width: 100%;
 		}
